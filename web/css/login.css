@@ -1,0 +1,439 @@
+body {
+    line-height: 1;
+}
+
+body, .login-submit, .login-submit:before, .login-submit:after {
+    background: #373737 url("../img/bg.png") 0 0 repeat;
+}
+
+body {
+    font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #404040;
+}
+
+header{
+    height: 100px;
+    width: 100%;    
+}
+
+header h1{
+    color:#00a1d2;   
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 1px 1px 1px black;       
+}
+
+a {
+    color: #00a1d2;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.loginform {
+    position: relative;
+    margin: 80px auto;
+    width: 400px;
+    padding-right: 32px;
+    font-weight: 300;
+    color: #a8a7a8;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+
+.loginform p {
+    margin: 0 0 10px;
+}
+
+input, button, label {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=password] {
+    padding: 0 10px;
+    width: 300px;
+    height: 40px;
+    color: #bbb;
+    text-shadow: 1px 1px 1px black;
+    background: rgba(0, 0, 0, 0.16);
+    border: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    outline: 0;
+}
+
+label {
+    float: left;
+    width: 100px;
+    line-height: 40px;
+    padding-right: 10px;
+    font-weight: 100;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+.forgot-password {
+    padding-left: 100px;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.login-submit {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    border-radius: 32px;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+}
+
+.login-submit:before, .login-submit:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+}
+
+.login-submit:before {
+    top: 28px;
+    left: -4px;
+    width: 4px;
+    height: 10px;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.login-submit:after {
+    top: -4px;
+    bottom: -4px;
+    right: -4px;
+    width: 36px;
+}
+
+.login-button {
+    position: relative;
+    z-index: 2;
+    width: 48px;
+    height: 48px;
+    padding: 0 0 48px;
+    /* Fix wrong positioning in Firefox 9 & older (bug 450418) */
+    text-indent: 120%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: none;
+    border: 0;
+    border-radius: 24px;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+    /* Must use another pseudo element for the gradient background because Webkit */
+    /* clips the background incorrectly inside elements with a border-radius.     */
+}
+
+.login-button:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background: #00a2d3;
+    border-radius: 24px;
+    background-image: -webkit-linear-gradient(top, #00a2d3, #0d7796);
+    background-image: -moz-linear-gradient(top, #00a2d3, #0d7796);
+    background-image: -o-linear-gradient(top, #00a2d3, #0d7796);
+    background-image: linear-gradient(to bottom, #00a2d3, #0d7796);
+    -webkit-box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+    box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+}
+
+.login-button:active:before {
+    background: #0591ba;
+    background-image: -webkit-linear-gradient(top, #0591ba, #00a2d3);
+    background-image: -moz-linear-gradient(top, #0591ba, #00a2d3);
+    background-image: -o-linear-gradient(top, #0591ba, #00a2d3);
+    background-image: linear-gradient(to bottom, #0591ba, #00a2d3);
+}
+
+.login-button:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 25px;
+    height: 19px;
+    background: url("../img/arrow.png") 0 0 no-repeat;
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.lt-ie9 input[type=text], .lt-ie9 input[type=password] {
+    line-height: 40px;
+    background: #282828;
+}
+
+.lt-ie9 .login-submit {
+    position: absolute;
+    top: 12px;
+    right: -28px;
+    padding: 4px;
+}
+
+.lt-ie9 .login-submit:before, .lt-ie9 .login-submit:after {
+    display: none;
+}
+
+.lt-ie9 .login-button {
+    line-height: 48px;
+}
+
+.lt-ie9 .about {
+    background: #313131;
+}
+
+button{
+  width: 100px;  
+}
+
+.container {
+    margin: 100pt auto;
+    width: 380px;
+    vertical-align: middle;
+}
+.container .notif {
+    margin: auto;
+    vertical-align: middle;
+}
+
+.notif {
+    position: relative;    
+    padding: 25px 30px 25px 100px;
+    min-height: 75px;
+    line-height: 22px;
+    background: white;
+    border-radius: 5px;
+}
+.notif:before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    border: 5px solid;
+    border-radius: 25px;
+}
+.notif p {
+    font-size: 11px;
+    color: #666;
+}
+
+.notif-title {
+    margin: 0 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.notif-title:before, .notif-title:after {
+    content: '';
+    position: absolute;
+    background: white;
+    border-radius: 2px;
+}
+
+.notif-notice:before {
+    background: #a7d155; /*Color del circulo del cheque*/
+    border-color: #8fb14f;
+}
+.notif-notice .notif-title:before, .notif-notice .notif-title:after {
+    top: 44px;
+    left: 55px;
+    width: 4px;
+    height: 12px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.notif-notice .notif-title:after {
+    top: 50px;
+    left: 48px;
+    width: 8px;
+    height: 4px;
+}
+
+.notif-alert:before {
+    background: #e34f4f;
+    border-color: #c14343;
+}
+.notif-alert .notif-title:before, .notif-alert .notif-title:after {
+    top: 43px;
+    left: 53px;
+    width: 4px;
+    height: 14px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.notif-alert .notif-title:after {
+    top: 48px;
+    left: 48px;
+    width: 14px;
+    height: 4px;
+}
+
+.notif-warn:before {
+    background: #f1e472;
+    border-color: #cec260;
+}
+.notif-warn .notif-title:before, .notif-warn .notif-title:after {
+    top: 42px;
+    left: 53px;
+    width: 4px;
+    height: 11px;
+    background: #5c562b;
+}
+.notif-warn .notif-title:after {
+    top: 54px;
+    height: 4px;
+}
+
+.notif-controls {
+    position: absolute;
+    top: 0pt;
+    right: 0;
+    height: 16px;
+    width: 52pt;
+    padding: 4px 3px 5px;
+    background: #f0f0f0;
+    border: solid #dcdcdc;
+    border-width: 0 0 1px 1px;
+    border-radius: 0 2px;
+}
+.notif-controls > a {
+    position: relative;
+    float: left;
+    margin: 0 1px;
+    width: 16px;
+    height: 16px;
+    font: serif;
+    text-shadow: none;
+    color: transparent;
+}
+
+.notif-minimize:before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 4px;
+    width: 7px;
+    height: 2px;
+    background: #bbb;
+}
+.notif-minimize:hover:before {
+    background: #888;
+}
+
+.notif-zoom:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    width: 5px;
+    height: 3px;
+    border: 2px solid #bbb;
+}
+.notif-zoom:hover:before {
+    border-color: #888;
+}
+
+.notif-close:before, .notif-close:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    width: 2px;
+    height: 10px;
+    background: #bbb;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.notif-close:after {
+    top: 8px;
+    left: 3px;
+    width: 10px;
+    height: 2px;
+}
+.notif-close:hover:before, .notif-close:hover:after {
+    background: #888;
+}
+
+/* IE 8 doesn't support CSS transforms; use Unicode instead. */
+.lt-ie9 .notif-notice .notif-title:before {
+    content: '\2714';
+    display: block;
+    top: 25px;
+    left: 30px;
+    width: 50px;
+    font: bold 18px/50px "Arial Unicode MS";
+    color: white;
+    text-align: center;
+    background: none;
+}
+.lt-ie9 .notif-notice .notif-title:after {
+    display: none;
+}
+.lt-ie9 .notif-alert .notif-title:before {
+    content: '\2716';
+    display: block;
+    top: 25px;
+    left: 30px;
+    width: 50px;
+    font: bold 17px/50px "Arial Unicode MS";
+    color: white;
+    text-align: center;
+    background: none;
+}
+.lt-ie9 .notif-alert .notif-title:after {
+    display: none;
+}
+.lt-ie9 .notif-close:before {
+    content: '\2716';
+    display: block;
+    top: 0;
+    left: 0;
+    width: 16px;
+    font: 11px/19px 'Arial Unicode MS';
+    color: #bbb;
+    text-align: center;
+    background: none;
+}
+.lt-ie9 .notif-close:after {
+    display: none;
+}
+.lt-ie9 .notif-close:hover:before {
+    color: #999;
+}

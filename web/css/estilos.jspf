@@ -1,0 +1,29 @@
+<%--
+<style type="text/css">
+<!--
+.style1 {font-family: "Times New Roman", Times, serif;
+	font-size: 36px;
+	color: #FFFFFF;
+}
+.style3 {font-size: xx-large;
+	font-family: "Courier New", Courier, mono;
+}
+.style4 {font-size: small;
+	color: #FFFFFF;
+}
+.style5 {color: #FF0000}
+.style7 {font-size: small;
+	color: #0000CC;
+}
+-->
+</style>
+<link rel="stylesheet" href="${pageContext.servletContext.contextPath}/CSS/displaytag.css" type="text/css">
+        --%>
+
+
+<link rel="stylesheet" href="app_styles.css" type="text/css">
+<link rel="stylesheet" href="maven-base.css" type="text/css">
+<link rel="stylesheet" href="maven-theme.css" type="text/css">
+<link rel="stylesheet" href="site.css" type="text/css">
+<link rel="stylesheet" href="screen.css" type="text/css">
+<link rel="stylesheet" href="print.css" type="text/css">
