@@ -117,7 +117,7 @@
 
             <div class="footer">
                 <p>All Copyrights Reserved.</p>
-                <p>El presente proyecto ha sido creado para la administración y control del sistema de ventas e inventario de la Óptica Especial</p>
+                <p>El presente proyecto ha sido creado para la administración y control del sistema de ventas e inventario de la Óptica Especial, En la Ciudad de San Salvador</p>
             </div>
         </div>
         <!--CONTENEDOR END-->
