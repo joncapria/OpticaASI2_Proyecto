@@ -3,6 +3,7 @@
     Created on : Oct 10, 2013, 12:37:20 PM
     Author     : JonathanDaniel
 --%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8" language="java"%>
 <!DOCTYPE html>
 <%@include file="../elementos_codigo.jspf" %>
@@ -63,7 +64,9 @@
                         </center>                    
                     </div>
                 </fieldset>
-                <form id="form1" class="niceform" name="form1" method="post" action="${pageContext.servletContext.contextPath}/srvCliente"> 
+
+                <form id="form1" class="niceform" name="form1" method="post" action="${pageContext.servletContext.contextPath}/srvCliente">
+
                     <table class="tableform">
                         <tr>
                             <td colspan="2">
@@ -111,9 +114,10 @@
             </div>
             <!--FORMULARIO END-->           
             <br><br><br><br>
+
             <div class="footer">
                 <p>All Copyrights Reserved.</p>
-                <p>El presente proyecto ha sido creado para la administración y control del sistema de ventas e inventario de la Óptica Especial, En la Ciudad de San Salvador</p>
+                <p>El presente proyecto ha sido creado para la administración y control del sistema de ventas e inventario de la Óptica Especial</p>
             </div>
         </div>
         <!--CONTENEDOR END-->
